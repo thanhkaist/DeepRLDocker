@@ -42,7 +42,7 @@ bash docker_root.sh my_container
 
 * [Docker](https://www.docker.com/)
 * [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
-* [Dockerfile Best Practices](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/
+* [Dockerfile Best Practices](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/)
 ## License
 
 MIT
