@@ -1,0 +1,9 @@
+gym
+atari-py
+opencv-python
+scikit-image
+tqdm
+pandas
+pathlib
+seaborn
+roboschool
