@@ -6,6 +6,14 @@ This is a docker image for deep reinforcement learning.
 
 * Docker
 
+## Example usage
+
+```bash
+bash docker_build.sh
+bash docker_container.sh
+bash docker_user.sh deep_rl_v10
+```
+
 ## Build
 
 ```bash
