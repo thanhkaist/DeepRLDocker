@@ -12,7 +12,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-
     libboost-python-dev libtinyxml-dev bash \
     wget unzip libosmesa6-dev software-properties-common \
     libopenmpi-dev libglew-dev openssh-server \
-    libosmesa6-dev libgl1-mesa-glx libgl1-mesa-dev patchelf libglfw3
+    libosmesa6-dev libgl1-mesa-glx libgl1-mesa-dev patchelf libglfw3 tmux
 
 RUN rm -rf /var/lib/apt/lists/*
 
@@ -39,7 +39,9 @@ RUN wget https://mujoco.org/download/mujoco210-linux-x86_64.tar.gz -O mujoco.tar
     && tar -xf mujoco.tar.gz -C .mujoco \
     && rm mujoco.tar.gz
 
-
+RUN conda init bash
+RUN echo set-option -g default-shell /bin/bash >> ~/.tmux.conf
+RUN echo set -g mouse on >> ~/.tmux.conf
 
 # Make sure you have a license, otherwise comment this line out
 # Of course you then cannot use Mujoco and DM Control, but Roboschool is still available
