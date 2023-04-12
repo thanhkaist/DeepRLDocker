@@ -12,7 +12,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-
     libboost-python-dev libtinyxml-dev bash \
     wget unzip libosmesa6-dev software-properties-common \
     libopenmpi-dev libglew-dev openssh-server \
-    libosmesa6-dev libgl1-mesa-glx libgl1-mesa-dev patchelf libglfw3 tmux
+    libosmesa6-dev libgl1-mesa-glx libgl1-mesa-dev patchelf libglfw3 tmux libglew-dev
 
 RUN rm -rf /var/lib/apt/lists/*
 
